@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "utf-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+"-//Hibernate/Hibernate Mapping DTD//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="main.java.model.Quotation" table="garlic.quotation">
+		<id name="id" type="long" column="id">
+		</id>
+		<property name="date" type="date">
+			<column name="date" />
+		</property>
+		<property name="n" type="int">
+			<column name="n" />
+		</property>
+		<property name="avg" type="double">
+			<column name="avg" />
+		</property>
+		<property name="quote" type="string">
+			<column name="quote" />
+		</property>
+	</class>
+</hibernate-mapping>
